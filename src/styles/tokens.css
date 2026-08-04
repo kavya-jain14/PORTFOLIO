@@ -1,0 +1,46 @@
+:root {
+  /* Cold cinematic intro */
+  --color-void: #07090d;
+  --color-charcoal: #10141a;
+  --color-snow: #e8edf2;
+  --color-steel: #7d8996;
+  --color-cold-blue: #70a7ff;
+  --color-electric-blue: #3e7bfa;
+
+  /* Warm portfolio (reserved) */
+  --color-ink: #050505;
+  --color-caramel: #c98b52;
+  --color-sand: #dfc5a4;
+
+  /* Semantic surfaces */
+  --surface-base: var(--color-void);
+  --surface-elevated: var(--color-charcoal);
+
+  /* Semantic text */
+  --text-primary: var(--color-snow);
+  --text-secondary: var(--color-steel);
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+
+  /* Transitions */
+  --duration-instant: 100ms;
+  --duration-fast: 200ms;
+  --duration-normal: 300ms;
+  --ease-default: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

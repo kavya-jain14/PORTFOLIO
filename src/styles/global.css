@@ -1,0 +1,25 @@
+@import './reset.css';
+@import './tokens.css';
+@import './typography.css';
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--text-primary);
+  background-color: var(--surface-base);
+}
+
+:focus-visible {
+  outline: 2px solid var(--text-secondary);
+  outline-offset: 2px;
+}
+
+::selection {
+  background-color: var(--surface-elevated);
+  color: var(--text-primary);
+}
