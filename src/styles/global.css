@@ -4,14 +4,17 @@
 
 html {
   color-scheme: dark;
+  background: var(--color-void);
 }
 
 body {
+  min-width: 320px;
   font-family: var(--font-sans);
   font-size: var(--text-base);
   line-height: var(--leading-normal);
   color: var(--text-primary);
   background-color: var(--surface-base);
+  overscroll-behavior-y: none;
 }
 
 :focus-visible {
