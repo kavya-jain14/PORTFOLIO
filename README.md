@@ -1,56 +1,29 @@
-# Personal Portfolio
+# Kavya Jain — portfolio
 
-A modern, interactive personal portfolio website showcasing projects, skills, and experience. Built with React, Vite, and GSAP for high-performance animations and a premium user experience.
+A responsive personal homepage with selected project repositories, an about section, and a GitHub contact link. The page uses a flat editorial layout, semantic sections, a keyboard skip link, visible focus states, and reduced-motion-aware anchor navigation.
 
-## Features
+## Run locally
 
-- **React & Vite**: Fast development environment and optimized production builds.
-- **GSAP Animations**: Smooth, performant scroll and micro-interactions.
-- **Modern UI/UX**: Fully responsive, accessible, and premium design system.
+Tested with Node.js 24.
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js (v18 or higher recommended)
-- npm (Node Package Manager)
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/kavya-jain14/PORTFOLIO.git
-   ```
-
-2. Navigate to the project directory:
-   ```bash
-   cd PORTFOLIO
-   ```
-
-3. Install the dependencies:
-   ```bash
-   npm install
-   ```
-
-### Development
-
-To start the local development server:
-
-```bash
+```sh
+npm ci
 npm run dev
 ```
-Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
-### Build
-
-To create a production-ready build:
-
-```bash
+```sh
+npm run lint
 npm run build
+npm run preview
 ```
 
-## Technologies Used
+## Source map
 
-- [React](https://reactjs.org/) - UI Library
-- [Vite](https://vitejs.dev/) - Build Tool
-- [GSAP](https://greensock.com/gsap/) - Animation Library
+- `src/App.jsx`: project descriptions and page content.
+- `src/App.css`: responsive page layout.
+- `src/index.css`: typography, defaults, focus and motion preferences.
+- `index.html`: page title and description.
+
+Built with React and Vite. GSAP remains installed for future motion work; the current page does not depend on an animation sequence. Project links lead to source repositories and do not claim that every project is deployed or complete.
+
+The production build was checked in Chromium at desktop and 375 px widths without horizontal overflow. Publishing this repository does not by itself verify a live hosting deployment.
